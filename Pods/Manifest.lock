@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.5.1)
+  - ObjectMapper (3.1.0)
+  - PKHUD (5.0.0)
+
+DEPENDENCIES:
+  - Alamofire
+  - ObjectMapper (~> 3.1)
+  - PKHUD (~> 5.0)
+
+SPEC CHECKSUMS:
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  PKHUD: 3c001512c6e002091184197a8de7a20420786e3b
+
+PODFILE CHECKSUM: 857a7695ac7f3697767dfca9f1cb1acbd12f4c2a
+
+COCOAPODS: 1.4.0

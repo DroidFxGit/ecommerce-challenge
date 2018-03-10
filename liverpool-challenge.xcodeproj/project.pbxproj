@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5233681E2054516800242022 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233681D2054516800242022 /* AppDelegate.swift */; };
+		523368252054516800242022 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 523368242054516800242022 /* Assets.xcassets */; };
+		523368282054516800242022 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 523368262054516800242022 /* LaunchScreen.storyboard */; };
+		52336831205451A100242022 /* MainSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233682F205451A100242022 /* MainSearchViewController.swift */; };
+		52336832205451A100242022 /* MainSearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52336830205451A100242022 /* MainSearchViewController.xib */; };
+		5233683920545D0A00242022 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233683820545D0A00242022 /* ThemeManager.swift */; };
+		5233683C20545DFF00242022 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233683B20545DFF00242022 /* Color.swift */; };
+		523368402054648000242022 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233683F2054648000242022 /* UserDefaultsManager.swift */; };
+		523368442054688B00242022 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523368432054688B00242022 /* SearchFooter.swift */; };
+		523368462054787B00242022 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 523368452054787B00242022 /* Localizable.strings */; };
+		52336848205478E900242022 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336847205478E900242022 /* L10n.swift */; };
+		C15D59FBF6D7B6BA70540D22 /* Pods_liverpool_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5E44596AFE318AF5874C38 /* Pods_liverpool_challenge.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		06600940375A7A60A3AE0CFB /* Pods-liverpool-challenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liverpool-challenge.debug.xcconfig"; path = "Pods/Target Support Files/Pods-liverpool-challenge/Pods-liverpool-challenge.debug.xcconfig"; sourceTree = "<group>"; };
+		3F5E44596AFE318AF5874C38 /* Pods_liverpool_challenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_liverpool_challenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5233681A2054516800242022 /* liverpool-challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "liverpool-challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5233681D2054516800242022 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		523368242054516800242022 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		523368272054516800242022 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		523368292054516800242022 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5233682F205451A100242022 /* MainSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSearchViewController.swift; sourceTree = "<group>"; };
+		52336830205451A100242022 /* MainSearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainSearchViewController.xib; sourceTree = "<group>"; };
+		5233683820545D0A00242022 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		5233683B20545DFF00242022 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		5233683F2054648000242022 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		523368432054688B00242022 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		523368452054787B00242022 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		52336847205478E900242022 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		789D09AB49E20320DBA45AA2 /* Pods-liverpool-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liverpool-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-liverpool-challenge/Pods-liverpool-challenge.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		523368172054516800242022 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C15D59FBF6D7B6BA70540D22 /* Pods_liverpool_challenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3E06938D12D4F12EC7A41F8F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3F5E44596AFE318AF5874C38 /* Pods_liverpool_challenge.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		523368112054516800242022 = {
+			isa = PBXGroup;
+			children = (
+				5233681C2054516800242022 /* liverpool-challenge */,
+				5233681B2054516800242022 /* Products */,
+				760D01D5F294DAA693F149B1 /* Pods */,
+				3E06938D12D4F12EC7A41F8F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5233681B2054516800242022 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5233681A2054516800242022 /* liverpool-challenge.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5233681C2054516800242022 /* liverpool-challenge */ = {
+			isa = PBXGroup;
+			children = (
+				523368412054686600242022 /* utils */,
+				5233683720545CF600242022 /* configuration */,
+				5233683D2054600C00242022 /* protocols */,
+				52336833205451AF00242022 /* sections */,
+				5233681D2054516800242022 /* AppDelegate.swift */,
+				523368242054516800242022 /* Assets.xcassets */,
+				523368262054516800242022 /* LaunchScreen.storyboard */,
+				523368452054787B00242022 /* Localizable.strings */,
+				523368292054516800242022 /* Info.plist */,
+			);
+			path = "liverpool-challenge";
+			sourceTree = "<group>";
+		};
+		52336833205451AF00242022 /* sections */ = {
+			isa = PBXGroup;
+			children = (
+				5233683620545AF400242022 /* coordinators */,
+				523368352054523400242022 /* results */,
+				523368342054522700242022 /* search */,
+			);
+			path = sections;
+			sourceTree = "<group>";
+		};
+		523368342054522700242022 /* search */ = {
+			isa = PBXGroup;
+			children = (
+				5233682F205451A100242022 /* MainSearchViewController.swift */,
+				52336830205451A100242022 /* MainSearchViewController.xib */,
+			);
+			path = search;
+			sourceTree = "<group>";
+		};
+		523368352054523400242022 /* results */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = results;
+			sourceTree = "<group>";
+		};
+		5233683620545AF400242022 /* coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = coordinators;
+			sourceTree = "<group>";
+		};
+		5233683720545CF600242022 /* configuration */ = {
+			isa = PBXGroup;
+			children = (
+				5233683E2054646400242022 /* managers */,
+			);
+			path = configuration;
+			sourceTree = "<group>";
+		};
+		5233683A20545DC500242022 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				5233683B20545DFF00242022 /* Color.swift */,
+				52336847205478E900242022 /* L10n.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		5233683D2054600C00242022 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = protocols;
+			sourceTree = "<group>";
+		};
+		5233683E2054646400242022 /* managers */ = {
+			isa = PBXGroup;
+			children = (
+				5233683820545D0A00242022 /* ThemeManager.swift */,
+				5233683F2054648000242022 /* UserDefaultsManager.swift */,
+			);
+			path = managers;
+			sourceTree = "<group>";
+		};
+		523368412054686600242022 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				5233683A20545DC500242022 /* common */,
+				523368422054687300242022 /* custom */,
+			);
+			path = utils;
+			sourceTree = "<group>";
+		};
+		523368422054687300242022 /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				523368432054688B00242022 /* SearchFooter.swift */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		760D01D5F294DAA693F149B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06600940375A7A60A3AE0CFB /* Pods-liverpool-challenge.debug.xcconfig */,
+				789D09AB49E20320DBA45AA2 /* Pods-liverpool-challenge.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		523368192054516800242022 /* liverpool-challenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5233682C2054516800242022 /* Build configuration list for PBXNativeTarget "liverpool-challenge" */;
+			buildPhases = (
+				92EC4BD67A1B152B2E4B374C /* [CP] Check Pods Manifest.lock */,
+				523368162054516800242022 /* Sources */,
+				523368172054516800242022 /* Frameworks */,
+				523368182054516800242022 /* Resources */,
+				8C97277B20E53519E1D46B52 /* [CP] Embed Pods Frameworks */,
+				B64A1CF71F3512A451809A80 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "liverpool-challenge";
+			productName = "liverpool-challenge";
+			productReference = 5233681A2054516800242022 /* liverpool-challenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		523368122054516800242022 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Carlos Vázquez Gómez";
+				TargetAttributes = {
+					523368192054516800242022 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 523368152054516800242022 /* Build configuration list for PBXProject "liverpool-challenge" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 523368112054516800242022;
+			productRefGroup = 5233681B2054516800242022 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				523368192054516800242022 /* liverpool-challenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		523368182054516800242022 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				523368282054516800242022 /* LaunchScreen.storyboard in Resources */,
+				523368462054787B00242022 /* Localizable.strings in Resources */,
+				52336832205451A100242022 /* MainSearchViewController.xib in Resources */,
+				523368252054516800242022 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8C97277B20E53519E1D46B52 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-liverpool-challenge/Pods-liverpool-challenge-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/PKHUD/PKHUD.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PKHUD.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-liverpool-challenge/Pods-liverpool-challenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92EC4BD67A1B152B2E4B374C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-liverpool-challenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B64A1CF71F3512A451809A80 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-liverpool-challenge/Pods-liverpool-challenge-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		523368162054516800242022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5233681E2054516800242022 /* AppDelegate.swift in Sources */,
+				523368402054648000242022 /* UserDefaultsManager.swift in Sources */,
+				5233683C20545DFF00242022 /* Color.swift in Sources */,
+				52336831205451A100242022 /* MainSearchViewController.swift in Sources */,
+				52336848205478E900242022 /* L10n.swift in Sources */,
+				523368442054688B00242022 /* SearchFooter.swift in Sources */,
+				5233683920545D0A00242022 /* ThemeManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		523368262054516800242022 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				523368272054516800242022 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5233682A2054516800242022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5233682B2054516800242022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5233682D2054516800242022 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 06600940375A7A60A3AE0CFB /* Pods-liverpool-challenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "liverpool-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fx.liverpool-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5233682E2054516800242022 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 789D09AB49E20320DBA45AA2 /* Pods-liverpool-challenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "liverpool-challenge/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fx.liverpool-challenge";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		523368152054516800242022 /* Build configuration list for PBXProject "liverpool-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5233682A2054516800242022 /* Debug */,
+				5233682B2054516800242022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5233682C2054516800242022 /* Build configuration list for PBXNativeTarget "liverpool-challenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5233682D2054516800242022 /* Debug */,
+				5233682E2054516800242022 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 523368122054516800242022 /* Project object */;
+}

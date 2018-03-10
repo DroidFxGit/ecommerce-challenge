@@ -1,0 +1,6 @@
+framework module Pods_liverpool_challenge {
+  umbrella header "Pods-liverpool-challenge-umbrella.h"
+
+  export *
+  module * { export * }
+}

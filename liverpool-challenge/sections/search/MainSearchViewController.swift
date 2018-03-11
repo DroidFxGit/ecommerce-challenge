@@ -15,7 +15,7 @@ class MainSearchViewController: UIViewController {
     
     lazy var searchController: UISearchController = {
         let searchView = UISearchController(searchResultsController: nil)
-        searchView.searchResultsUpdater = self
+        searchView.searchBar.delegate = self
         searchView.obscuresBackgroundDuringPresentation = false
         searchView.searchBar.setDefaultSearchBar()
         
@@ -24,8 +24,7 @@ class MainSearchViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        searchController.isActive = true
-        searchController.searchBar.becomeFirstResponder()
+        tableView.becomeFirstResponder()
     }
     
     override func viewDidLoad() {
@@ -39,15 +38,15 @@ class MainSearchViewController: UIViewController {
         }
         tableView.tableFooterView = searchFooterView
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-
 }
 
-extension MainSearchViewController: UISearchResultsUpdating {
-    func updateSearchResults(for searchController: UISearchController) {
+extension MainSearchViewController: UISearchBarDelegate {
+    func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
+        let resultsSearchView = ResultsViewController()
+        resultsSearchView.searchString = searchBar.text?.lowercased()
         
+        searchController.isActive = false
+        tableView.becomeFirstResponder()
+        self.navigationController?.pushViewController(resultsSearchView, animated: true)
     }
 }

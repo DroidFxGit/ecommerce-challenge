@@ -18,6 +18,15 @@
 		523368442054688B00242022 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523368432054688B00242022 /* SearchFooter.swift */; };
 		523368462054787B00242022 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 523368452054787B00242022 /* Localizable.strings */; };
 		52336848205478E900242022 /* L10n.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336847205478E900242022 /* L10n.swift */; };
+		5233684B205486E000242022 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52336849205486E000242022 /* ResultsViewController.swift */; };
+		5233684C205486E000242022 /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5233684A205486E000242022 /* ResultsViewController.xib */; };
+		5233684E2054875D00242022 /* ResultsCollectionViewAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233684D2054875D00242022 /* ResultsCollectionViewAdapter.swift */; };
+		5233685020548A6900242022 /* MainSeachViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233684F20548A6900242022 /* MainSeachViewModel.swift */; };
+		5233685320548CA900242022 /* ProductsResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233685220548CA900242022 /* ProductsResult.swift */; };
+		523368552054940100242022 /* FavoritesCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 523368542054940100242022 /* FavoritesCollectionViewFlowLayout.swift */; };
+		5233685920549A2D00242022 /* CollectionItemViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233685720549A2D00242022 /* CollectionItemViewCell.swift */; };
+		5233685A20549A2D00242022 /* CollectionItemViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5233685820549A2D00242022 /* CollectionItemViewCell.xib */; };
+		5233685C20549EEA00242022 /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5233685B20549EEA00242022 /* ViewControllerProtocol.swift */; };
 		C15D59FBF6D7B6BA70540D22 /* Pods_liverpool_challenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F5E44596AFE318AF5874C38 /* Pods_liverpool_challenge.framework */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +46,15 @@
 		523368432054688B00242022 /* SearchFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		523368452054787B00242022 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		52336847205478E900242022 /* L10n.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = L10n.swift; sourceTree = "<group>"; };
+		52336849205486E000242022 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		5233684A205486E000242022 /* ResultsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
+		5233684D2054875D00242022 /* ResultsCollectionViewAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsCollectionViewAdapter.swift; sourceTree = "<group>"; };
+		5233684F20548A6900242022 /* MainSeachViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSeachViewModel.swift; sourceTree = "<group>"; };
+		5233685220548CA900242022 /* ProductsResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsResult.swift; sourceTree = "<group>"; };
+		523368542054940100242022 /* FavoritesCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		5233685720549A2D00242022 /* CollectionItemViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionItemViewCell.swift; sourceTree = "<group>"; };
+		5233685820549A2D00242022 /* CollectionItemViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionItemViewCell.xib; sourceTree = "<group>"; };
+		5233685B20549EEA00242022 /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
 		789D09AB49E20320DBA45AA2 /* Pods-liverpool-challenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-liverpool-challenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-liverpool-challenge/Pods-liverpool-challenge.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,9 +99,9 @@
 		5233681C2054516800242022 /* liverpool-challenge */ = {
 			isa = PBXGroup;
 			children = (
+				5233685120548B9000242022 /* models */,
 				523368412054686600242022 /* utils */,
 				5233683720545CF600242022 /* configuration */,
-				5233683D2054600C00242022 /* protocols */,
 				52336833205451AF00242022 /* sections */,
 				5233681D2054516800242022 /* AppDelegate.swift */,
 				523368242054516800242022 /* Assets.xcassets */,
@@ -97,7 +115,7 @@
 		52336833205451AF00242022 /* sections */ = {
 			isa = PBXGroup;
 			children = (
-				5233683620545AF400242022 /* coordinators */,
+				52336856205496F300242022 /* viewModels */,
 				523368352054523400242022 /* results */,
 				523368342054522700242022 /* search */,
 			);
@@ -116,20 +134,19 @@
 		523368352054523400242022 /* results */ = {
 			isa = PBXGroup;
 			children = (
+				5233684D2054875D00242022 /* ResultsCollectionViewAdapter.swift */,
+				52336849205486E000242022 /* ResultsViewController.swift */,
+				5233684A205486E000242022 /* ResultsViewController.xib */,
+				5233685720549A2D00242022 /* CollectionItemViewCell.swift */,
+				5233685820549A2D00242022 /* CollectionItemViewCell.xib */,
 			);
 			path = results;
-			sourceTree = "<group>";
-		};
-		5233683620545AF400242022 /* coordinators */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = coordinators;
 			sourceTree = "<group>";
 		};
 		5233683720545CF600242022 /* configuration */ = {
 			isa = PBXGroup;
 			children = (
+				5233683D2054600C00242022 /* protocols */,
 				5233683E2054646400242022 /* managers */,
 			);
 			path = configuration;
@@ -147,6 +164,7 @@
 		5233683D2054600C00242022 /* protocols */ = {
 			isa = PBXGroup;
 			children = (
+				5233685B20549EEA00242022 /* ViewControllerProtocol.swift */,
 			);
 			path = protocols;
 			sourceTree = "<group>";
@@ -173,8 +191,25 @@
 			isa = PBXGroup;
 			children = (
 				523368432054688B00242022 /* SearchFooter.swift */,
+				523368542054940100242022 /* FavoritesCollectionViewFlowLayout.swift */,
 			);
 			path = custom;
+			sourceTree = "<group>";
+		};
+		5233685120548B9000242022 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				5233685220548CA900242022 /* ProductsResult.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		52336856205496F300242022 /* viewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5233684F20548A6900242022 /* MainSeachViewModel.swift */,
+			);
+			path = viewModels;
 			sourceTree = "<group>";
 		};
 		760D01D5F294DAA693F149B1 /* Pods */ = {
@@ -250,8 +285,10 @@
 			files = (
 				523368282054516800242022 /* LaunchScreen.storyboard in Resources */,
 				523368462054787B00242022 /* Localizable.strings in Resources */,
+				5233684C205486E000242022 /* ResultsViewController.xib in Resources */,
 				52336832205451A100242022 /* MainSearchViewController.xib in Resources */,
 				523368252054516800242022 /* Assets.xcassets in Resources */,
+				5233685A20549A2D00242022 /* CollectionItemViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,9 +361,16 @@
 				523368402054648000242022 /* UserDefaultsManager.swift in Sources */,
 				5233683C20545DFF00242022 /* Color.swift in Sources */,
 				52336831205451A100242022 /* MainSearchViewController.swift in Sources */,
+				5233685C20549EEA00242022 /* ViewControllerProtocol.swift in Sources */,
+				5233685320548CA900242022 /* ProductsResult.swift in Sources */,
 				52336848205478E900242022 /* L10n.swift in Sources */,
+				523368552054940100242022 /* FavoritesCollectionViewFlowLayout.swift in Sources */,
 				523368442054688B00242022 /* SearchFooter.swift in Sources */,
+				5233685020548A6900242022 /* MainSeachViewModel.swift in Sources */,
 				5233683920545D0A00242022 /* ThemeManager.swift in Sources */,
+				5233684B205486E000242022 /* ResultsViewController.swift in Sources */,
+				5233684E2054875D00242022 /* ResultsCollectionViewAdapter.swift in Sources */,
+				5233685920549A2D00242022 /* CollectionItemViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -42,11 +42,13 @@ class MainSearchViewController: UIViewController {
 
 extension MainSearchViewController: UISearchBarDelegate {
     func searchBarTextDidEndEditing(_ searchBar: UISearchBar) {
-        let resultsSearchView = ResultsViewController()
-        resultsSearchView.searchString = searchBar.text?.lowercased()
-        
-        searchController.isActive = false
-        tableView.becomeFirstResponder()
-        self.navigationController?.pushViewController(resultsSearchView, animated: true)
+        if !(searchBar.text?.isEmpty)! {
+            let resultsSearchView = ResultsViewController()
+            resultsSearchView.searchString = searchBar.text?.lowercased()
+            
+            searchController.isActive = false
+            tableView.becomeFirstResponder()
+            self.navigationController?.pushViewController(resultsSearchView, animated: true)
+        }
     }
 }

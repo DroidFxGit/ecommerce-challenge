@@ -10,7 +10,7 @@ import UIKit
 
 class FavoritesCollectionViewFlowLayout: UICollectionViewFlowLayout {
     fileprivate var collection: UICollectionView!
-    fileprivate let kHeaderHeight: CGFloat = 60.0
+    fileprivate let kHeaderHeight: CGFloat = 10.0
     fileprivate let kEdgeInsetBroads: CGFloat = 5.0
     fileprivate let kEdgeInsetSides: CGFloat = 10.0
     fileprivate let kItemSize: CGFloat = 174.0

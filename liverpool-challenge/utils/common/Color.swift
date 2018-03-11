@@ -12,6 +12,7 @@ struct Color {
     struct Theme {
         static var dark: UIColor { return UIColor(red: 200, green: 0, blue: 135) }
         static var normal: UIColor { return UIColor(red: 225, green: 0, blue: 152) }
+        static var background: UIColor { return UIColor(red: 248, green: 248, blue: 248) }
     }
 }
 

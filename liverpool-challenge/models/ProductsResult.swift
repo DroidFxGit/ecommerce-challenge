@@ -9,18 +9,49 @@
 import UIKit
 import ObjectMapper
 
-struct ProductsResult: Mappable {
+struct MappingResult: Mappable {
     
-    var products: [Products]?
+    var contents: [[String: Any]]?
     
     init?(map: Map) { }
     
     mutating func mapping(map: Map) {
-        products <- map["contents.mainContent.contents.records"]
+        contents <- map["contents"]
     }
 }
 
-struct Products: Mappable {
+struct ContentResult: Mappable {
+    
+    var mainContent: [[String: Any]]?
+    
+    init?(map: Map) { }
+    
+    mutating func mapping(map: Map) {
+        mainContent <- map["mainContent"]
+    }
+}
+
+struct MainContentResult: Mappable {
+    var contents: [[String: Any]]?
+    
+    init?(map: Map) { }
+    
+    mutating func mapping(map: Map) {
+        contents <- map["contents"]
+    }
+}
+
+struct RecordsResult: Mappable {
+    var products: [Product]?
+    
+    init?(map: Map) { }
+    
+    mutating func mapping(map: Map) {
+        products <- map["records"]
+    }
+}
+
+struct Product: Mappable {
     
     var imageUrl: String?
     var mainPrice: String?
@@ -29,8 +60,8 @@ struct Products: Mappable {
     init?(map: Map) { }
     
     mutating func mapping(map: Map) {
-        imageUrl <- map["attributes.product.smallImage"]
-        mainPrice <- map["attributes.sku.list_Price"]
-        displayName <- map["attributes.product.displayName"]
+        imageUrl <- map["attributes->product.smallImage->0->value", delimiter: "->"]
+        mainPrice <- map["attributes->sku.list_Price->0->value", delimiter: "->"]
+        displayName <- map["attributes->product.displayName->0->value", delimiter: "->"]
     }
 }

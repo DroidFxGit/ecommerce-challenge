@@ -21,7 +21,6 @@ class ResultsViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = searchString
-        adapter = ResultsCollectionViewAdapter(collectionView: collectionView)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -31,9 +30,10 @@ class ResultsViewController: UIViewController {
 
     func fetchResults() {
         guard let string = searchString else {return}
-        viewModel.fetchProducts(_with: string) {[weak self] (data, error) in
-            if data != nil {
+        viewModel.fetchProducts(_with: string) {[weak self] (products, error) in
+            if products != nil {
                 self?.finishLoadingHUD(.success)
+                self?.adapter = ResultsCollectionViewAdapter(collectionView: (self?.collectionView)!, products: products!)
             }
             else {
                 self?.finishLoadingHUD(.error)

@@ -19,15 +19,18 @@
                 <rect key="frame" x="0.0" y="0.0" width="174" height="178"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W4F-47-Yqk">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBQ-5o-11i">
                         <rect key="frame" x="0.0" y="0.0" width="174" height="178"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="W4F-47-Yqk">
+                        <rect key="frame" x="0.0" y="0.0" width="174" height="129"/>
                     </imageView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qQP-yM-J81">
                         <rect key="frame" x="0.0" y="129" width="174" height="49"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="CdU-Yc-xHS">
-                                <rect key="frame" x="8" y="8" width="161" height="41"/>
+                                <rect key="frame" x="8" y="4" width="161" height="41"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="buz-Ql-gFg">
                                         <rect key="frame" x="0.0" y="0.0" width="161" height="20.5"/>
@@ -48,17 +51,25 @@
                         <constraints>
                             <constraint firstAttribute="height" constant="49" id="BFr-3q-chC"/>
                             <constraint firstItem="CdU-Yc-xHS" firstAttribute="leading" secondItem="qQP-yM-J81" secondAttribute="leading" constant="8" id="RRS-0j-WRp"/>
-                            <constraint firstAttribute="bottom" secondItem="CdU-Yc-xHS" secondAttribute="bottom" id="hPo-h0-Fxf"/>
-                            <constraint firstItem="CdU-Yc-xHS" firstAttribute="top" secondItem="qQP-yM-J81" secondAttribute="top" constant="8" id="hxl-6h-0ee"/>
+                            <constraint firstItem="CdU-Yc-xHS" firstAttribute="top" secondItem="qQP-yM-J81" secondAttribute="top" constant="4" id="hxl-6h-0ee"/>
                             <constraint firstAttribute="trailing" secondItem="CdU-Yc-xHS" secondAttribute="trailing" constant="5" id="n7U-Yh-mNf"/>
+                            <constraint firstAttribute="bottom" secondItem="CdU-Yc-xHS" secondAttribute="bottom" constant="4" id="wif-YD-tWk"/>
                         </constraints>
                     </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="qQP-yM-J81" firstAttribute="top" secondItem="W4F-47-Yqk" secondAttribute="bottom" id="2JD-o6-aLU"/>
+                <constraint firstItem="W4F-47-Yqk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="M2b-Bd-I8S"/>
+                <constraint firstItem="BBQ-5o-11i" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="MH5-Vo-aHW"/>
                 <constraint firstAttribute="bottom" secondItem="qQP-yM-J81" secondAttribute="bottom" id="bOD-Wt-fxN"/>
+                <constraint firstAttribute="trailing" secondItem="BBQ-5o-11i" secondAttribute="trailing" id="dfg-cY-byy"/>
+                <constraint firstAttribute="trailing" secondItem="W4F-47-Yqk" secondAttribute="trailing" id="f3h-CP-7q5"/>
+                <constraint firstItem="BBQ-5o-11i" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="goR-AE-qqC"/>
                 <constraint firstItem="qQP-yM-J81" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="oWq-bT-kpo"/>
                 <constraint firstAttribute="trailing" secondItem="qQP-yM-J81" secondAttribute="trailing" id="rtF-dm-GtP"/>
+                <constraint firstItem="W4F-47-Yqk" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sEe-tv-87Z"/>
+                <constraint firstAttribute="bottom" secondItem="BBQ-5o-11i" secondAttribute="bottom" id="wTi-lv-Ht8"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <connections>
